@@ -703,7 +703,24 @@
 
 
 
-
+# class VTU:
+#     exm_date = "23-05-2023"
+#     @classmethod
+#     def collg1(cls):        #cls = VTU
+#         print("waiting for exam date")
+#         print(f"exam date is {cls.exm_date}")
+#     @classmethod
+#     def collg2(cls):        #cls = VTU
+#         print("waiting for exam date")
+#         print(f"exam date is {cls.exm_date}")
+#     @classmethod
+#     def collg3(cls):        #cls = VTU
+#         print("waiting for exam date")
+#         print(f"exam date is {cls.exm_date}")
+# 
+# VTU.exm_date = "25-05-2023"
+# VTU.collg1()
+# VTU.collg2()
 
 
 
