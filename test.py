@@ -193,14 +193,14 @@
 
 
 # # 7. Check if a character is a vowel and print next or previous character
-char = input("Enter a character: ")
-vowels = 'aeiou'
-if char in vowels:
-    next_char = chr(ord(char) + 1)
-    print(f"Next character: {next_char}")
-else:
-    prev_char = chr(ord(char) - 1)
-    print(f"Previous character: {prev_char}")
+# char = input("Enter a character: ")
+# vowels = 'aeiou'
+# if char in vowels:
+#     next_char = chr(ord(char) + 1)
+#     print(f"Next character: {next_char}")
+# else:
+#     prev_char = chr(ord(char) - 1)
+#     print(f"Previous character: {prev_char}")
 
 
 
