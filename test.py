@@ -419,3 +419,118 @@
 #
 # o = Test2()
 # o.B()
+
+
+
+
+
+
+
+
+# access static method outside using super keyword
+
+
+# class SuperClass:
+#     @staticmethod
+#     def static_method():
+#         print("Static method in SuperClass")
+#
+# class SubClass(SuperClass):
+#     def instance_method(self):
+#         SuperClass.static_method()
+#
+# SuperClass.static_method()
+#
+# obj = SubClass()
+# obj.instance_method()
+
+
+
+
+
+
+# static method in both
+
+
+
+
+# class SuperClass:
+#     @staticmethod
+#     def static_method():
+#         print("Static method in SuperClass")
+#
+# class SubClass(SuperClass):
+#     @staticmethod
+#     def static_method():
+#         print("Static method in SubClass")
+#
+#     def instance_method(self):
+#         super().static_method()
+#         SuperClass.static_method()
+#         SubClass.static_method()
+#
+# print("Calling static methods from outside:")
+# SuperClass.static_method()
+# SubClass.static_method()
+#
+# print("\nCalling instance_method:")
+# obj = SubClass()
+# obj.instance_method()
+#
+# # Global variable
+# global_var = "I am a global variable"
+
+
+
+
+# Global variable
+# global_var = "I am a global variable"
+#
+#
+# class ExampleClass:
+#     #  non-local
+#     class_var = "I am a class variable"
+#
+#     def __init__(self, instance_var):
+#         # Instance
+#         self.instance_var = instance_var
+#
+#     def method1(self):
+#         # Local variable
+#         local_var = "I am a local variable"
+#
+#         print(global_var)
+#
+#         print(self.class_var)
+#
+#         print(self.instance_var)
+#
+#         print(local_var)
+#
+#     def method2(self):
+#         print(global_var)
+#
+#         print(self.class_var)
+#
+#         print(self.instance_var)
+#
+#
+#
+# obj = ExampleClass("I am an instance variable")
+#
+# obj.method1()
+# obj.method2()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
