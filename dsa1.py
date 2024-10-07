@@ -135,12 +135,12 @@ x=[23,6,9,3,10,11]
 
 # ========================================================
 
-a = "python apple sql java"
-words = a.split()
-print(words)
-sorted_words = sorted(words)
-sorted_a = " ".join(sorted_words)
-print(sorted_a)
+# a = "python apple sql java"
+# words = a.split()
+# print(words)
+# sorted_words = sorted(words)
+# sorted_a = " ".join(sorted_words)
+# print(sorted_a)
 
 # =========================================================
 
@@ -149,3 +149,60 @@ print(sorted_a)
 
 
 
+
+
+#======================================================
+# Insertion Sort
+# Time: O(n^2)
+# Space: O(1)
+#======================================================
+
+# here current val gets comapared with prev val for sorting 
+# STEPS:
+#   consider a list collection to sort
+#   start pass from 1 as oth pass there will be no prev val for comparison
+#   checl weather i is not equal to 0 or notif ture then check weather curr val is less than its prev val
+#   if above cond is true then swap both val and decrement val of i by 1
+#   repeat steps from 3 to 4 for all passes to et sorted collection
+
+
+B = [-5, 3, 2, 1, -3, -3, 7, 2, 2]
+
+# def insertion_sort(arr):
+#     n = len(arr)
+#     for i in range(1, n):
+#         for j in range(i, 0, -1):
+#             if arr[j - 1] > arr[j]:
+#                 arr[j - 1], arr[j] = arr[j], arr[j - 1]
+#             else:
+#                 break
+#     return arr
+
+# sorted_B = insertion_sort(B)
+# print(sorted_B)
+
+
+# i=0 --> we cant compare prev val
+# a[4] < a[3] --> 2 < 11 --> swap(2,11 --> i++)
+
+# a=[10,7,3,11,2]
+a = [ ("akash",1200), ("vijay",10000), ("alex", 8000), ("lakshmi", 6000) ]
+
+i = 1
+for passno in range(1,len(a)):
+    i = passno
+    while i!=0 and a[i] < a[i-1]:
+        a[i],a[i-1] = a[i-1],a[i]
+        i=i-1
+print(a)
+
+for passno in range(1, len(a)):
+    i = passno
+    while i > 0 and a[i][1] < a[i-1][1]:
+        a[i], a[i-1] = a[i-1], a[i]
+        i -= 1
+
+print(a)
+
+# output should be like below
+# a = [ ("akash",1200),  ("lakshmi", 6000), ("alex", 8000),("vijay",10000) ]
