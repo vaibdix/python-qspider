@@ -204,5 +204,5 @@ for passno in range(1, len(a)):
 
 print(a)
 
-# output should be like below
+# /output should be like below
 # a = [ ("akash",1200),  ("lakshmi", 6000), ("alex", 8000),("vijay",10000) ]
